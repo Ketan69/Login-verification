@@ -1,0 +1,18 @@
+<body bgcolor=#87ceeb>
+ <center><br><br><br><br><font size=5 color=white>
+ <form action=log method=POST>
+  {% csrf_token %}
+  Login id&nbsp&nbsp&nbsp<input type=text name='id' placeholder='Enter Id'><br>
+  Password&nbsp<input type=Password name='passwd' placeholder='Enter Password'><br>
+  <br></font>
+  <input type=submit name='signin' value='Sign-in'><br><br>
+  <input type=submit name='signup' value='Sign-up'>
+ </form>
+ <font size=3 color=black>or</font><br><br>
+ <form action=forgot method=POST>
+  {% csrf_token %}
+  <input type=submit value='forgot Password'>
+ </form>
+ </center>
+</body> 
+  

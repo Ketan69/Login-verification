@@ -1,0 +1,14 @@
+<body bgcolor=#87ceeb><a href='\log'>try again</a>
+ <center><br><br><br><br>
+ <form action=verify method=POST>
+  {% csrf_token %}
+  <input type=hidden name='id' value={{id}}>
+  <input type=hidden name='passwd' value={{passwd}}>
+  <input type=hidden name='nam' value={{nam}}>
+  <input type=hidden name='eid' value={{eid}}>
+  <input type=hidden name='num' value={{num}}>
+  <input type=Integer name='otp' placeholder='Enter Here'><br>
+  <input type=submit>
+ </form>
+ </center>
+</body>

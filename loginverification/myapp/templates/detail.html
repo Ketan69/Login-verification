@@ -1,0 +1,15 @@
+<body bgcolor=#87ceeb>
+ <a href='/'>Back</a>
+ <center><br><br><br><font size=5 color=white>
+ <form action=detail method=POST>
+  {% csrf_token %}
+  Login-Id&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type=text name='id' placeholder='Enter Id'><br>
+  Password&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type=password name='passwd' placeholder='Enter Password'><br>
+  ReEnter-Password <input type=password name='rpasswd' placeholder='Enter Password'>
+  <br>Name&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type=text name='nam' placeholder='Enter Name'>  
+  <br>Email-Id&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type=text name='eid' placeholder='Enter Email'>
+  <br>Cell No.&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type=Integer name='num' placeholder='Enter No.'><br>
+  <br><input type=submit>
+ </form>
+ </center>
+</body> 

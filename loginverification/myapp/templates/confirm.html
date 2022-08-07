@@ -1,0 +1,10 @@
+<body bgcolor=#87ceeb>
+<a href='\for'>Back</a>
+ <center><br><br><br><br><font size=5 color=white>
+ <form action=confirm method=POST>
+  {% csrf_token %}
+  LoginId<input type=email name='id' placeholder='Enter ID'><br>
+  New Password<input type=password name='passwd' placeholder='Enter new Password'><br>
+  Re-Enter PAssword<input type=password name='passwd' placeholder='Enter new Password'><br>
+  <input type=submit>
+ </form></font></center></body> 
